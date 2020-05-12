@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/************************************************************
+Fichier : style.scss
+Theme name : Liquid Neon Buttons
+Description: buttons néon remplissage
+Author: Shay Reichert
+Version: 1.0
+Tags: fx, effects, boutons, hover
+**************************************************************
+
+Table of Contents:
+
+0. Import (fonts, sass...)
+1. GENERALES
+2. SECTIONS
+3. BUTTONS
+
+**************************************************************/
+/************************************************
+0.	Import
+************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+/************************************************
+1.	GENERALES
+************************************************/
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Questrial", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: black;
+  background: #092436; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 90px; }
+
+h1 {
+  font-size: 50px;
+  margin: 40px auto;
+  padding: 10px 30px;
+  color: black; }
+
+h2 {
+  font-size: 40px;
+  padding: 15px 40px;
+  border: 2px solid #051c2e;
+  border-radius: 5px; }
+
+/************************************************
+2.	SECTION
+************************************************/
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly; }
+
+/************************************************
+3.	BUTTONS
+************************************************/
+.btn {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  -webkit-transition: 100ms 300ms;
+  -o-transition: 100ms 300ms;
+  transition: 100ms 300ms; }
+  .btn:hover {
+    border: 2px solid;
+    border-radius: 5px; }
+  .btn__sass::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #cf649a;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+            box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a; }
+  .btn__sass:hover::before {
+    height: 180%; }
+  .btn__sass:hover {
+    -webkit-box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a;
+            box-shadow: 0 0 10px #cf649a, 0 0 40px #cf649a, 0 0 80px #cf649a; }
+  .btn__html::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #df4b25;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+            box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25; }
+  .btn__html:hover::before {
+    height: 180%; }
+  .btn__html:hover {
+    -webkit-box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25;
+            box-shadow: 0 0 10px #df4b25, 0 0 40px #df4b25, 0 0 80px #df4b25; }
+  .btn__css::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3596cf;
+    z-index: -1;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 40px 40px 0 0;
+    -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+            box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf; }
+  .btn__css:hover::before {
+    height: 180%; }
+  .btn__css:hover {
+    -webkit-box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf;
+            box-shadow: 0 0 10px #3596cf, 0 0 40px #3596cf, 0 0 80px #3596cf; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3N0eWxlLmNzcyIsIi4uL3N0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FDQWhCOzs7Ozs7Ozs7Ozs7Ozs7OzhERGlCOEQ7QUNDOUQ7O2dEREVnRDtBQ0N4Qyw4RUFBc0U7QUFLOUU7O2dEREZnRDtBQ0toRDtFQUNJLFNBQVM7RUFDVCxVQUFVO0VBQ1YsaUJBQWlCO0VBQ2pCLDhCQUFzQjtVQUF0QixzQkFBc0I7RUFDdEIsbUZBQW1GO0VBQ25GLFlBQVk7RUFDWixtQkFBbUIsRUFBQTs7QUFFdkI7RUFDSSxvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLDRCQUFzQjtFQUF0Qiw2QkFBc0I7TUFBdEIsMEJBQXNCO1VBQXRCLHNCQUFzQjtFQUN0QixnQkFBZ0IsRUFBQTs7QUFHcEI7RUFDSSxlQUFlO0VBQ2YsaUJBQWlCO0VBQ2pCLGtCQUFrQjtFQUNsQixZQUFZLEVBQUE7O0FBR2hCO0VBQ0ksZUFBZTtFQUNmLGtCQUFrQjtFQUNsQix5QkFBeUI7RUFDekIsa0JBQWtCLEVBQUE7O0FBR3RCOztnRERMZ0Q7QUNRaEQ7RUFDSSxvQkFBYTtFQUFiLG9CQUFhO0VBQWIsYUFBYTtFQUNiLDhCQUFtQjtFQUFuQiw2QkFBbUI7TUFBbkIsdUJBQW1CO1VBQW5CLG1CQUFtQjtFQUNuQixtQkFBZTtNQUFmLGVBQWU7RUFDZiw4QkFBNkI7TUFBN0IsMkJBQTZCO1VBQTdCLDZCQUE2QixFQUFBOztBQUdqQzs7Z0RETmdEO0FDVWhEO0VBQ0ksZUFBZTtFQUNmLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsK0JBQXVCO0VBQXZCLDBCQUF1QjtFQUF2Qix1QkFBdUIsRUFBQTtFQUN2QjtJQUNJLGlCQUFpQjtJQUNqQixrQkFBa0IsRUFBQTtFQUt0QjtJQUNJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsT0FBTztJQUNQLFdBQVc7SUFDWCxVQUFVO0lBQ1YsbUJBcEVZO0lBcUVaLFdBQVc7SUFDWCx3QkFBZ0I7SUFBaEIsbUJBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixTQUFTO0lBQ1QsNEJBQTRCO0lBQzVCLHdFQUE0RTtZQUE1RSxnRUFBNEUsRUFBQTtFQUVoRjtJQUNJLFlBQVksRUFBQTtFQUVoQjtJQUNJLHdFQUE0RTtZQUE1RSxnRUFBNEUsRUFBQTtFQUtoRjtJQUNJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsT0FBTztJQUNQLFdBQVc7SUFDWCxVQUFVO0lBQ1YsbUJBekZZO0lBMEZaLFdBQVc7SUFDWCx3QkFBZ0I7SUFBaEIsbUJBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixTQUFTO0lBQ1QsNEJBQTRCO0lBQzVCLHdFQUE0RTtZQUE1RSxnRUFBNEUsRUFBQTtFQUVoRjtJQUNJLFlBQVksRUFBQTtFQUVoQjtJQUNJLHdFQUE0RTtZQUE1RSxnRUFBNEUsRUFBQTtFQUtoRjtJQUNJLFdBQVc7SUFDWCxrQkFBa0I7SUFDbEIsT0FBTztJQUNQLFdBQVc7SUFDWCxVQUFVO0lBQ1YsbUJBOUdXO0lBK0dYLFdBQVc7SUFDWCx3QkFBZ0I7SUFBaEIsbUJBQWdCO0lBQWhCLGdCQUFnQjtJQUNoQixTQUFTO0lBQ1QsNEJBQTRCO0lBQzVCLHdFQUF5RTtZQUF6RSxnRUFBeUUsRUFBQTtFQUU3RTtJQUNJLFlBQVksRUFBQTtFQUVoQjtJQUNJLHdFQUF5RTtZQUF6RSxnRUFBeUUsRUFBQSIsImZpbGUiOiJzdHlsZS5jc3MifQ== */

@@ -1,0 +1,13 @@
+{
+  "name": "memo_dev_web",
+  "version": "1.0.0",
+  "description": "1 Créer un package.json : npm init     (installer sass : npm install sass -g puis sass --version)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./css/style.scss:./css/style.css",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d ./css/prefixed/"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}

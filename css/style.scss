@@ -1,0 +1,148 @@
+/************************************************************
+Fichier : style.scss
+Theme name : Liquid Neon Buttons
+Description: buttons néon remplissage
+Author: Shay Reichert
+Version: 1.0
+Tags: fx, effects, boutons, hover
+**************************************************************
+
+Table of Contents:
+
+0. Import (fonts, sass...)
+1. GENERALES
+2. SECTIONS
+3. BUTTONS
+
+**************************************************************/
+
+/************************************************
+0.	Import
+************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+$color-sass: #cf649a;
+$color-html: #df4b25;
+$color-css: #3596cf;
+
+/************************************************
+1.	GENERALES
+************************************************/
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: "Questrial", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    color: black;
+    background: #092436;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 40px auto;
+    padding: 10px 30px;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    padding: 15px 40px;
+    border: 2px solid #051c2e;
+    border-radius: 5px;
+}
+
+/************************************************
+2.	SECTION
+************************************************/
+section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/************************************************
+3.	BUTTONS
+************************************************/
+
+.btn {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: 100ms 300ms;
+    &:hover {
+        border: 2px solid;
+        border-radius: 5px;
+    }
+
+
+
+    &__sass::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: $color-sass;
+        z-index: -1;
+        transition: 0.8s;
+        bottom: 0;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 0 0 10px $color-sass, 0 0 40px $color-sass, 0 0 80px $color-sass;
+    }
+    &__sass:hover::before {
+        height: 180%;
+    }
+    &__sass:hover {
+        box-shadow: 0 0 10px $color-sass, 0 0 40px $color-sass, 0 0 80px $color-sass;
+    }
+
+
+
+    &__html::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: $color-html;
+        z-index: -1;
+        transition: 0.8s;
+        bottom: 0;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 0 0 10px $color-html, 0 0 40px $color-html, 0 0 80px $color-html;
+    }
+    &__html:hover::before {
+        height: 180%;
+    }
+    &__html:hover {
+        box-shadow: 0 0 10px $color-html, 0 0 40px $color-html, 0 0 80px $color-html;
+    }
+
+
+
+    &__css::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background: $color-css;
+        z-index: -1;
+        transition: 0.8s;
+        bottom: 0;
+        border-radius: 40px 40px 0 0;
+        box-shadow: 0 0 10px $color-css, 0 0 40px $color-css, 0 0 80px $color-css;
+    }
+    &__css:hover::before {
+        height: 180%;
+    }
+    &__css:hover {
+        box-shadow: 0 0 10px $color-css, 0 0 40px $color-css, 0 0 80px $color-css;
+    }
+}
