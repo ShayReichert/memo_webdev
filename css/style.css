@@ -29,8 +29,8 @@ body {
   min-height: 100vh;
   box-sizing: border-box;
   font-family: "Questrial", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: black;
-  background: #092436; }
+  color: white;
+  background: black; }
 
 .container {
   display: flex;
@@ -41,7 +41,7 @@ h1 {
   font-size: 50px;
   margin: 40px auto;
   padding: 10px 30px;
-  color: black; }
+  color: grey; }
 
 h2 {
   font-size: 40px;
